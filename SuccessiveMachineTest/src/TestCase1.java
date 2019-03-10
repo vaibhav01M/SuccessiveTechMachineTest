@@ -16,6 +16,7 @@ public class TestCase1 {
 		 
 		System.setProperty("webdriver.ie.driver","F:\\Java Basic\\JAR files\\IEDriverServer.exe");
         WebDriver driver = new InternetExplorerDriver();
+        
         driver.get("http://bg-dev.eweblife.com/prm/bgbtw/rsvp-signup/apply?record=826");
 		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
